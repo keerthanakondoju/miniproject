@@ -1,0 +1,140 @@
+body {
+	background: url(main.jpg);
+	display: flex;
+	height: 100vh;
+    background-size: cover;
+    text-align: center;
+	align-items: center;
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+
+
+
+function Search()
+        {
+            var flag=0;
+            console.log(" in search");
+            const x=['Haiking','Cafe Niloufer','Board Game Cafe','Nosh Bistro','Ohris','Paradise','Ghrelin','Huber & and Holly','The Blue Fox','Minerva','Alex Kitchen','Chung Hua','Mumbai Masala','Norfest the dhaba','Masala Republic'];
+            var input=document.getElementById('search').value;
+            input = input.toLowerCase();
+            if(x[0].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('haiking.html');
+                return;
+            }
+            else if(x[1].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('niloufer.html');
+                return;
+            }
+            else if(x[2].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('boardgame.html');
+                return;
+            }
+            else if(x[3].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('nosh.html');
+                return;
+            }
+            else if(x[4].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('ohris.html');
+                return;
+            }
+            else if(x[5].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('paradise.html');
+                return;
+            }
+            else if(x[6].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('ghrelin.html');
+                return;
+            }
+
+            else if(x[7].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('huber.html');
+                return;
+            }
+            else if(x[8].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('blue.html');
+                return;
+            }
+            else if(x[9].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('minerva.html');
+                return;
+            }
+            else if(x[10].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('alex.html');
+                return;
+            }
+            else if(x[11].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('chunghua.html');
+                return;
+            }
+            else if(x[12].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('mumbai.html');
+                return;
+            }
+            else if(x[13].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('norfest.html');
+                return;
+            }
+            else if(x[14].toLowerCase().includes(input))
+            {
+                flag=1;
+                location.replace('masala.html');
+                return;
+            }
+            if(flag==0)
+            {
+                document.getElementById('notfound').append('Restaurant you are searching for is not found!');
+                return;
+            }
+
+        }
+
+
+
+
